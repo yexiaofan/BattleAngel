@@ -1,9 +1,7 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <h2>Ecosystem</h2>
-    <Button></Button>
+    <h1>Icon</h1>
+    
   </div>
 </template>
 
