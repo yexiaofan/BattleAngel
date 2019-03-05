@@ -1,7 +1,8 @@
 <template>
   <div class="hello">
     <h1>Icon</h1>
-    
+    <Icon type="md-alert"></Icon>
+    <hr>
   </div>
 </template>
 

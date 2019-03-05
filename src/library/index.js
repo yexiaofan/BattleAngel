@@ -1,7 +1,9 @@
 import Button from './components/Button/Button.vue'
+import Icon from './components/Icon/index'
 
 const components = {
-  Button
+  Button,
+  Icon
 }
 
 const install = function (Vue, opts = {}) {

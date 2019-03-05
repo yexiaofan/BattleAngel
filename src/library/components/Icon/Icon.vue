@@ -1,11 +1,34 @@
 <style lang="less">
-@import '../'
+@import "../../css/ionicons.min.css";
 </style>
 
 <template>
-  <i class=""></i>
+  <!-- <i :class="`ion icon-${type}`" :style="style"></i> -->
+  <i :class="`ion ion-${type}`" :style="style"></i>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      style: {
+        'font-size': `${this.size}px`,
+        'color': this.color
+      }
+    };
+  },
+  props: {
+    type: {
+      type: String
+    },
+    size: {
+      type: [Number, String],
+      default: 40
+    },
+    color: {
+      type: String,
+      default: "#515a6e"
+    }
+  }
+};
 </script>
