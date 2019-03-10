@@ -3,19 +3,22 @@
 </style>
 
 <template>
-  <!-- <i :class="`ion icon-${type}`" :style="style"></i> -->
-  <i :class="`ion ion-${type}`" :style="style"></i>
+  <i :class="classes" :style="styles" @click="handleClick"></i>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      style: {
+  computed: {
+    classes () {
+      return `ion ion-${this.type}`
+    },
+    styles () {
+      let style = {
         'font-size': `${this.size}px`,
         'color': this.color
       }
-    };
+      return style
+    }
   },
   props: {
     type: {
@@ -23,12 +26,16 @@ export default {
     },
     size: {
       type: [Number, String],
-      default: 40
+      default: 16
     },
     color: {
-      type: String,
-      default: "#515a6e"
+      type: String
     }
-  }
+  },
+  methods: {
+    handleClick () {
+      this.$emit('click')
+    }
+  },
 };
 </script>

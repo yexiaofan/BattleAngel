@@ -1,5 +1,5 @@
-import Button from './components/Button/Button.vue'
-import Icon from './components/Icon/index'
+import Button from './components/Button'
+import Icon from './components/Icon'
 
 const components = {
   Button,
