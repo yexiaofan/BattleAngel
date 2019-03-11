@@ -1,28 +1,40 @@
 <style lang="less" scoped>
+.main-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  .wrapper {
+    flex: 0 0 10%;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin: 8px;
+  }
+}
 </style>
 
 <template>
-  <div>
-      <!-- <Icon type="md-woman"></Icon> -->
-      <template v-for="(value, index) in icons">
-          <Icon :type="value"></Icon>
-      </template>
+  <div class="main-wrapper">
+    <template v-for="(value, index) in icons">
+      <span class="wrapper" :key="index">
+        <Icon :type="value" size="36"></Icon>
+        <span>{{value}}</span>
+      </span>
+    </template>
   </div>
 </template>
 
 <script>
-import icons from '../library/components/Icon/Icons.js'
+import icons from "../library/components/Icon/Icons.js";
 export default {
-    computed: {
-        icons () {
-            let iconsList = []
-            for (let value of icons) {
-                iconsList.push(value.slice(4))
-            } 
-            return iconsList
-        }
-    },
-    created() {
-    },
+  computed: {
+    icons() {
+      let iconsList = [];
+      for (let value of icons) {
+        iconsList.push(value.slice(4));
+      }
+      return iconsList;
+    }
+  },
+  created() {}
 };
 </script>
