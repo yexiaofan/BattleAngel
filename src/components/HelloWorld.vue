@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>Icon</h1>
-    <Icon type="md-alert" @click="handleClick"></Icon>
+    <Button type="primary" @click="routeToIcon">点击查看所有Icon</Button>
     <hr>
     <h1>Button</h1>
     <Button>Default</Button>
@@ -40,6 +40,8 @@
     <Button type="warning" disabled>Warning</Button>
     <Button type="error" disabled>Error</Button>
     <hr>
+    <Button type="primary" icon="ios-loading" loading>Loading</Button>
+    <hr>
   </div>
 </template>
 
@@ -54,6 +56,11 @@ export default {
   methods: {
     handleClick () {
       alert('iocn clicked!')
+    },
+    routeToIcon () {
+      this.$router.push({
+        name: 'icon'
+      })
     }
   }
 }

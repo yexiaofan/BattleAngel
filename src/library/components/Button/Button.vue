@@ -169,8 +169,9 @@
 </style>
 
 <template>
-  <button :class="classes" :disabled="disabled">
-    <Icon :type="icon" v-if="!!icon"></Icon>
+  <button :class="classes" :disabled="disabled" @click="handleClick">
+    <Icon :type="icon" v-if="!!icon && !loading"></Icon>
+    <Icon type="ios-loading" v-if="loading"></Icon>
     <span>
       <slot></slot>
     </span>
@@ -199,7 +200,8 @@ export default {
     disabled: Boolean,
     shape: String,
     icon: String,
-    long: Boolean
+    long: Boolean,
+    loading: Boolean
   },
   computed: {
     classes() {
@@ -219,8 +221,12 @@ export default {
   components: {
     Icon
   },
+  methods: {
+    handleClick () {
+      this.$emit('click')
+    }
+  },
   created() {
-    
   }
 };
 </script>
