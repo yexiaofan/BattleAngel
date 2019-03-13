@@ -42,6 +42,66 @@
     <hr>
     <Button type="primary" icon="ios-loading" loading>Loading</Button>
     <hr>
+    <h1>ButtonGroup</h1>
+    <ButtonGroup>
+        <Button>Cancel</Button>
+        <Button type="primary">Confirm</Button>
+    </ButtonGroup>
+    <ButtonGroup>
+        <Button disabled>Yesterday</Button>
+        <Button disabled>Today</Button>
+        <Button disabled>Today</Button>
+        <Button disabled>Tomorrow</Button>
+    </ButtonGroup>
+    <ButtonGroup>
+        <Button type="primary">L</Button>
+        <Button>M</Button>
+        <Button>M</Button>
+        <Button type="dashed">R</Button>
+    </ButtonGroup>
+    <hr>
+    <ButtonGroup>
+        <Button type="primary">
+            <Icon type="ios-arrow-back"></Icon>
+            Backward
+        </Button>
+        <Button type="primary">
+            Forward
+            <Icon type="ios-arrow-forward"></Icon>
+        </Button>
+    </ButtonGroup>
+    <ButtonGroup>
+        <Button type="primary" icon="ios-skip-backward"></Button>
+        <Button type="primary" icon="ios-skip-forward"></Button>
+    </ButtonGroup>
+    <ButtonGroup>
+        <Button icon="ios-color-filter"></Button>
+        <Button icon="ios-eye"></Button>
+        <Button icon="ios-crop"></Button>
+        <Button icon="logo-twitter"></Button>
+    </ButtonGroup>
+    <hr>
+    <ButtonGroup shape="circle">
+        <Button type="primary">
+            <Icon type="ios-arrow-back"></Icon>
+            Backward
+        </Button>
+        <Button type="primary">
+            Forward
+            <Icon type="ios-arrow-forward"></Icon>
+        </Button>
+    </ButtonGroup>
+    <ButtonGroup shape="circle">
+        <Button type="primary" icon="ios-skip-backward"></Button>
+        <Button type="primary" icon="ios-skip-forward"></Button>
+    </ButtonGroup>
+    <ButtonGroup shape="circle">
+        <Button icon="ios-color-filter"></Button>
+        <Button icon="ios-eye"></Button>
+        <Button icon="ios-crop"></Button>
+        <Button icon="logo-twitter"></Button>
+    </ButtonGroup>
+    <hr>
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <style lang="less">
 @import "../../css/base.less";
 .ba-btn {
-  outline: 0;
+  outline: none;
   cursor: pointer;
   border-radius: @border-radius-normal;
   text-align: center;
