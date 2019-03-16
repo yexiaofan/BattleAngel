@@ -1,106 +1,10 @@
 <template>
   <div class="hello">
     <h1>Icon</h1>
-    <Button type="primary" @click="routeToIcon">点击查看所有Icon</Button>
+    <Button type="primary" @click="routeTo('icon')">点击查看所有Icon</Button>
     <hr>
     <h1>Button</h1>
-    <Button>Default</Button>
-    <Button type="primary">Primary</Button>
-    <Button type="dashed">Dashed</Button>
-    <Button type="text">Text</Button>
-    <Button type="info">Info</Button>
-    <Button type="success">Success</Button>
-    <Button type="warning">Warning</Button>
-    <Button type="error">Error</Button>
-    <hr>
-    <Button ghost>Default</Button>
-    <Button type="primary" ghost>Primary</Button>
-    <Button type="dashed" ghost>Dashed</Button>
-    <Button type="text" ghost>Text</Button>
-    <Button type="info" ghost>Info</Button>
-    <Button type="success" ghost>Success</Button>
-    <Button type="warning" ghost>Warning</Button>
-    <Button type="error" ghost>Error</Button>
-    <hr>
-    <Button type="primary" shape="circle" icon="ios-search"></Button>
-    <Button type="primary" icon="ios-search">Search</Button>
-    <Button type="primary" shape="circle" icon="ios-search">Search</Button>
-    <Button type="primary" shape="circle">Circle</Button>
-    <hr>
-    <Button type="info" size="small">Info</Button>
-    <Button type="success">Success</Button>
-    <Button type="warning" size="default">Warning</Button>
-    <Button type="error" size="large">Error</Button>
-    <hr>
-    <Button type="success" long>Success</Button>
-    <Button type="error" long>Error</Button>
-    <hr>
-    <Button type="info" disabled>Info</Button>
-    <Button type="success" disabled>Success</Button>
-    <Button type="warning" disabled>Warning</Button>
-    <Button type="error" disabled>Error</Button>
-    <hr>
-    <Button type="primary" icon="ios-loading" loading>Loading</Button>
-    <hr>
-    <h1>ButtonGroup</h1>
-    <ButtonGroup>
-        <Button>Cancel</Button>
-        <Button type="primary">Confirm</Button>
-    </ButtonGroup>
-    <ButtonGroup>
-        <Button disabled>Yesterday</Button>
-        <Button disabled>Today</Button>
-        <Button disabled>Today</Button>
-        <Button disabled>Tomorrow</Button>
-    </ButtonGroup>
-    <ButtonGroup>
-        <Button type="primary">L</Button>
-        <Button>M</Button>
-        <Button>M</Button>
-        <Button type="dashed">R</Button>
-    </ButtonGroup>
-    <hr>
-    <ButtonGroup>
-        <Button type="primary">
-            <Icon type="ios-arrow-back"></Icon>
-            Backward
-        </Button>
-        <Button type="primary">
-            Forward
-            <Icon type="ios-arrow-forward"></Icon>
-        </Button>
-    </ButtonGroup>
-    <ButtonGroup>
-        <Button type="primary" icon="ios-skip-backward"></Button>
-        <Button type="primary" icon="ios-skip-forward"></Button>
-    </ButtonGroup>
-    <ButtonGroup>
-        <Button icon="ios-color-filter"></Button>
-        <Button icon="ios-eye"></Button>
-        <Button icon="ios-crop"></Button>
-        <Button icon="logo-twitter"></Button>
-    </ButtonGroup>
-    <hr>
-    <ButtonGroup shape="circle">
-        <Button type="primary">
-            <Icon type="ios-arrow-back"></Icon>
-            Backward
-        </Button>
-        <Button type="primary">
-            Forward
-            <Icon type="ios-arrow-forward"></Icon>
-        </Button>
-    </ButtonGroup>
-    <ButtonGroup shape="circle">
-        <Button type="primary" icon="ios-skip-backward"></Button>
-        <Button type="primary" icon="ios-skip-forward"></Button>
-    </ButtonGroup>
-    <ButtonGroup shape="circle">
-        <Button icon="ios-color-filter"></Button>
-        <Button icon="ios-eye"></Button>
-        <Button icon="ios-crop"></Button>
-        <Button icon="logo-twitter"></Button>
-    </ButtonGroup>
+    <Button type="primary" @click="routeTo('button')">点击查看所有Button</Button>
     <hr>
   </div>
 </template>
@@ -117,9 +21,9 @@ export default {
     handleClick () {
       alert('iocn clicked!')
     },
-    routeToIcon () {
+    routeTo (target) {
       this.$router.push({
-        name: 'icon'
+        name: target
       })
     }
   }

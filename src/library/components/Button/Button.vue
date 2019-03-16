@@ -1,3 +1,73 @@
+
+<template>
+  <button :class="classes" :disabled="disabled" @click="handleClick" :type="htmlType">
+    <Icon :type="icon" v-if="!!icon && !loading"></Icon>
+    <Icon type="ios-refresh" v-if="loading"></Icon>
+    <span>
+      <slot></slot>
+    </span>
+  </button>
+</template>
+
+<script>
+import Icon from '../Icon'
+export default {
+  data() {
+    return {};
+  },
+  props: {
+    type: {
+      type: String,
+      default: "default"
+    },
+    ghost: {
+      type: Boolean,
+      default: false
+    },
+    size: {
+      type: String,
+      default: 'default'
+    },
+    disabled: Boolean,
+    shape: String,
+    icon: String,
+    long: Boolean,
+    loading: Boolean,
+    'html-type': {
+      type: String,
+      default: 'button'
+    }
+  },
+  computed: {
+    classes() {
+      return [
+        "ba-btn",
+        {
+          [`ba-btn-${this.type}`]: !!this.type,
+          [`ba-btn-ghost`]: !!this.ghost,
+          [`ba-btn-circle`]: !!this.shape,
+          [`ba-btn-icon-only`]: !!this.shape && !(!!this.$slots.default),
+          [`ba-btn-${this.size}-size`]: !!this.size,
+          [`ba-btn-long`]: this.long,
+          [`ba-btn-loading`]: this.loading
+        }
+      ]
+    }
+  },
+  components: {
+    Icon
+  },
+  methods: {
+    handleClick () {
+      this.$emit('click')
+    }
+  },
+  created() {
+    
+  }
+};
+</script>
+
 <style lang="less">
 @import "../../css/base.less";
 .ba-btn {
@@ -165,69 +235,25 @@
     cursor: not-allowed;
     color: @disabled-color;
   }
+  &-loading {
+    i {
+      animation: loading-adnimate .8s ease infinite
+    }
+  }
+}
+
+@keyframes loading-adnimate {
+  0%   {transform: rotate(0deg);}
+  10%  {transform: rotate(36deg);}
+  20%  {transform: rotate(72deg);}
+  30%  {transform: rotate(108deg);}
+  40%  {transform: rotate(144deg);}
+  50%  {transform: rotate(180deg);}
+  60%  {transform: rotate(216deg);}
+  70%  {transform: rotate(252deg);}
+  80%  {transform: rotate(288deg);}
+  90%  {transform: rotate(324deg);}
+  100% {transform: rotate(360deg);}
 }
 </style>
-
-<template>
-  <button :class="classes" :disabled="disabled" @click="handleClick">
-    <Icon :type="icon" v-if="!!icon && !loading"></Icon>
-    <Icon type="ios-loading" v-if="loading"></Icon>
-    <span>
-      <slot></slot>
-    </span>
-  </button>
-</template>
-
-<script>
-import Icon from '../Icon'
-export default {
-  data() {
-    return {};
-  },
-  props: {
-    type: {
-      type: String,
-      default: "default"
-    },
-    ghost: {
-      type: Boolean,
-      default: false
-    },
-    size: {
-      type: String,
-      default: 'default'
-    },
-    disabled: Boolean,
-    shape: String,
-    icon: String,
-    long: Boolean,
-    loading: Boolean
-  },
-  computed: {
-    classes() {
-      return [
-        "ba-btn",
-        {
-          [`ba-btn-${this.type}`]: !!this.type,
-          [`ba-btn-ghost`]: !!this.ghost,
-          [`ba-btn-circle`]: !!this.shape,
-          [`ba-btn-icon-only`]: !!this.shape && !(!!this.$slots.default),
-          [`ba-btn-${this.size}-size`]: !!this.size,
-          [`ba-btn-long`]: this.long
-        }
-      ];
-    }
-  },
-  components: {
-    Icon
-  },
-  methods: {
-    handleClick () {
-      this.$emit('click')
-    }
-  },
-  created() {
-  }
-};
-</script>
 
