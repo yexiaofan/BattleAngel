@@ -20,6 +20,11 @@ export default new Router({
       path: '/button',
       name: 'button',
       component: () => import('../components/Button.vue')
+    },
+    {
+      path: '/grid',
+      name: 'grid',
+      component: () => import('../components/Grid.vue')
     }
   ]
 })

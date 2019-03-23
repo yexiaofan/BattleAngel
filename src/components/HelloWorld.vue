@@ -6,6 +6,9 @@
     <h1>Button</h1>
     <Button type="primary" @click="routeTo('button')">点击查看所有Button</Button>
     <hr>
+    <h1>Row/Col</h1>
+    <Button type="primary" @click="routeTo('grid')">点击查看所有Grid布局</Button>
+    <hr>
   </div>
 </template>
 

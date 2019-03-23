@@ -1,11 +1,15 @@
 import Button from './components/Button'
 import Icon from './components/Icon'
 import ButtonGroup from './components/ButtonGroup'
+import Row from './components/Row'
+import Col from './components/Col'
 
 const components = {
   Button,
   Icon,
-  ButtonGroup
+  ButtonGroup,
+  Row,
+  Col
 }
 
 const install = function (Vue, opts = {}) {
