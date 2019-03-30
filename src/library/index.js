@@ -3,13 +3,15 @@ import Icon from './components/Icon'
 import ButtonGroup from './components/ButtonGroup'
 import Row from './components/Row'
 import Col from './components/Col'
+import Card from './components/Card'
 
 const components = {
   Button,
   Icon,
   ButtonGroup,
   Row,
-  Col
+  Col,
+  Card
 }
 
 const install = function (Vue, opts = {}) {

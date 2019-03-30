@@ -2,6 +2,7 @@
 .main-wrapper {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
   .wrapper {
     flex: 0 0 10%;
     display: flex;
