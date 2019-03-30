@@ -25,6 +25,11 @@ export default new Router({
       path: '/grid',
       name: 'grid',
       component: () => import('../components/Grid.vue')
+    },
+    {
+      path: '/card',
+      name: 'card',
+      component: () => import('../components/Card.vue')
     }
   ]
 })

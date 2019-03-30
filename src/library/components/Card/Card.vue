@@ -4,6 +4,7 @@
   border: 1px solid @border-color;
   border-radius: @border-radius-normal;
   position: relative;
+  padding: 16px;
   &-header {
     * {
       font-size: @font-size-large;
@@ -12,7 +13,6 @@
     }
     font-size: @font-size-large;
     font-weight: bold;
-    padding: 16px;
   }
   &-extra {
     * {
@@ -24,9 +24,6 @@
     position: absolute;
     top: 16px;
     right: 16px;
-  }
-  &-body {
-    padding: 16px;
   }
 }
 </style>

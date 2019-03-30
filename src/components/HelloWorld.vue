@@ -10,21 +10,7 @@
     <Button type="primary" @click="routeTo('grid')">点击查看所有Grid布局</Button>
     <hr>
     <h1>Card</h1>
-    <Card style="width:350px">
-      <p slot="title">
-        <Icon type="ios-attach"></Icon>
-        Classic film
-      </p>
-      <a href="#" slot="extra" @click.prevent="changeLimit">
-        <Icon type="ios-bonfire"></Icon>Change
-      </a>
-      <h1>{{msg}}</h1>
-    </Card>
-    <br>
-    <br>
-    <Card style="width:350px">
-      <h1>{{msg}}</h1>
-    </Card>
+    <Button type="primary" @click="routeTo('card')">点击查看所有Card</Button>
     <hr>
   </div>
 </template>
