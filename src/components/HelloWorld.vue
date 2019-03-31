@@ -12,6 +12,9 @@
     <h1>Card</h1>
     <Button type="primary" @click="routeTo('card')">点击查看所有Card</Button>
     <hr>
+    <h1>Collapse</h1>
+    <Button type="primary" @click="routeTo('collapse')">点击查看所有Collapse</Button>
+    <hr>
   </div>
 </template>
 
@@ -21,7 +24,7 @@ export default {
   data() {
     return {
       msg: "Welcome to Your Vue.js App"
-    };
+    }
   },
   methods: {
     handleClick() {
@@ -30,7 +33,7 @@ export default {
     routeTo(target) {
       this.$router.push({
         name: target
-      });
+      })
     }
   }
 };
@@ -38,4 +41,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.hello {
+  padding: 20px;
+}
+hr {
+  margin: 20px 0;
+}
 </style>

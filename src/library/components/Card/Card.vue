@@ -13,6 +13,7 @@
     }
     font-size: @font-size-large;
     font-weight: bold;
+    text-align: left;
   }
   &-extra {
     * {

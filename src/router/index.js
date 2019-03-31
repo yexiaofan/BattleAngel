@@ -30,6 +30,11 @@ export default new Router({
       path: '/card',
       name: 'card',
       component: () => import('../components/Card.vue')
+    },
+    {
+      path: '/collapse',
+      name: 'collapse',
+      component: () => import('../components/Collapse.vue')
     }
   ]
 })

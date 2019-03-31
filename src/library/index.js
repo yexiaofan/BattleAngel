@@ -4,6 +4,8 @@ import ButtonGroup from './components/ButtonGroup'
 import Row from './components/Row'
 import Col from './components/Col'
 import Card from './components/Card'
+import Collapse from './components/Collapse'
+import Panel from './components/Panel'
 
 const components = {
   Button,
@@ -11,7 +13,9 @@ const components = {
   ButtonGroup,
   Row,
   Col,
-  Card
+  Card,
+  Collapse,
+  Panel
 }
 
 const install = function (Vue, opts = {}) {
