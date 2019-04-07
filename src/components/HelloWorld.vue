@@ -15,6 +15,9 @@
     <h1>Collapse</h1>
     <Button type="primary" @click="routeTo('collapse')">点击查看所有Collapse</Button>
     <hr>
+    <h1>Input</h1>
+    <Button type="primary" @click="routeTo('input')">点击查看所有Input</Button>
+    <hr>
   </div>
 </template>
 

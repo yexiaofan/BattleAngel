@@ -6,6 +6,7 @@ import Col from './components/Col'
 import Card from './components/Card'
 import Collapse from './components/Collapse'
 import Panel from './components/Panel'
+import Input from './components/Input'
 
 const components = {
   Button,
@@ -15,7 +16,8 @@ const components = {
   Col,
   Card,
   Collapse,
-  Panel
+  Panel,
+  Input
 }
 
 const install = function (Vue, opts = {}) {

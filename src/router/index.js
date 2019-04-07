@@ -35,6 +35,12 @@ export default new Router({
       path: '/collapse',
       name: 'collapse',
       component: () => import('../components/Collapse.vue')
+    },
+    {
+      path: '/input',
+      name: 'input',
+      component: () => import('../components/Input.vue')
     }
+    
   ]
 })
