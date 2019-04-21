@@ -7,6 +7,8 @@ import Card from './components/Card'
 import Collapse from './components/Collapse'
 import Panel from './components/Panel'
 import Input from './components/Input'
+import Radio from './components/Radio'
+import RadioGroup from './components/RadioGroup'
 
 const components = {
   Button,
@@ -17,7 +19,9 @@ const components = {
   Card,
   Collapse,
   Panel,
-  Input
+  Input,
+  Radio,
+  RadioGroup
 }
 
 const install = function (Vue, opts = {}) {
