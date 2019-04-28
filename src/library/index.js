@@ -9,6 +9,8 @@ import Panel from './components/Panel'
 import Input from './components/Input'
 import Radio from './components/Radio'
 import RadioGroup from './components/RadioGroup'
+import Checkbox from './components/Checkbox'
+import CheckboxGroup from './components/CheckboxGroup'
 
 const components = {
   Button,
@@ -21,7 +23,9 @@ const components = {
   Panel,
   Input,
   Radio,
-  RadioGroup
+  RadioGroup,
+  Checkbox,
+  CheckboxGroup
 }
 
 const install = function (Vue, opts = {}) {
