@@ -19,7 +19,10 @@
     <Button type="primary" @click="routeTo('input')">点击查看所有Input</Button>
     <hr>
     <h1>Radio</h1>
-    <Button type="primary" @click="routeTo('radio')">点击查看所有Input</Button>
+    <Button type="primary" @click="routeTo('radio')">点击查看所有Radio</Button>
+    <hr>
+    <h1>CheckBox</h1>
+    <Button type="primary" @click="routeTo('checkbox')">点击查看所有CheckBox</Button>
     <hr>
   </div>
 </template>
