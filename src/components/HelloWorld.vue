@@ -24,6 +24,9 @@
     <h1>CheckBox</h1>
     <Button type="primary" @click="routeTo('checkbox')">点击查看所有CheckBox</Button>
     <hr>
+    <h1>Message</h1>
+    <Button type="primary" @click="info">Display info prompt</Button>
+    <hr>
   </div>
 </template>
 
@@ -32,7 +35,8 @@ export default {
   name: "HelloWorld",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App"
+      msg: "Welcome to Your Vue.js App",
+      switch1: true
     }
   },
   methods: {
@@ -43,6 +47,9 @@ export default {
       this.$router.push({
         name: target
       })
+    },
+    info () {
+      this.$Message.success('This is a info tip');
     }
   }
 };

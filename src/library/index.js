@@ -11,6 +11,7 @@ import Radio from './components/Radio'
 import RadioGroup from './components/RadioGroup'
 import Checkbox from './components/Checkbox'
 import CheckboxGroup from './components/CheckboxGroup'
+import Message from './components/Message'
 
 const components = {
   Button,
@@ -25,13 +26,16 @@ const components = {
   Radio,
   RadioGroup,
   Checkbox,
-  CheckboxGroup
+  CheckboxGroup,
+  Message
 }
 
 const install = function (Vue, opts = {}) {
   Object.keys(components).forEach((key) => {
     Vue.component(key, components[key])
   })
+
+  Vue.prototype.$Message = Message
 }
 
 // auto install
