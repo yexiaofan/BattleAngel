@@ -3,9 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import BattleAngel from './library/index'
+import ivueUI from './library/index'
 
-Vue.use(BattleAngel)
+Vue.use(ivueUI)
 
 Vue.config.productionTip = false
 

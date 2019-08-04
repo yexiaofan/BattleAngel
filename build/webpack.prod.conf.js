@@ -23,7 +23,7 @@ const webpackConfig = merge(baseWebpackConfig, {
   },
   devtool: config.build.productionSourceMap ? config.build.devtool : false,
   entry: {
-    battleAngel: './src/library/index.js'
+    'ivue-ui': './src/library/index.js'
   },
   output: {
     path: config.build.assetsRoot,

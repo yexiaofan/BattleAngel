@@ -1,11 +1,11 @@
 {
-  "name": "battle-angel",
+  "name": "ivue-ui",
   "version": "1.0.3",
-  "description": "A high quality UI components Library with Vue.js, code name Battle Angel.",
+  "description": "A high quality UI components Library with Vue.js, code name ivue UI.",
   "author": "yepengfei <1434497449@qq.com>",
   "license": "MIT",
   "private": false,
-  "main": "dist/battleAngel.min.js",
+  "main": "dist/ivue-ui.min.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",

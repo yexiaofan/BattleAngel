@@ -1,6 +1,6 @@
-# battle-angel
+# ivue-ui
 
-> A high quality UI components Library with Vue.js, code name Battle Angel.
+> A high quality UI components Library with Vue.js, code name ivue UI.
 
 ## Build Setup
 
